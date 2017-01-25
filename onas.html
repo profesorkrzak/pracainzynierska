@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Strona Główna</title>>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Glowny plik LESS -->
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <!-- Fonty google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LESS>JS -->
+    <!--<script src="js/less.min.js"></script>-->
+    <!-- warunkowe ladowanie scrollr -->
+    <script>
+	if (document.documentElement.clientWidth > 1200) {
+		$.getScript("js/skrollr.min.js", function(){
+		var s = skrollr.init({forceHeight: false});
+		});
+	}
+    </script>
+    <!-- wlasne JS -->
+    <script src="js/custom.js"></script>
+    <!-- odliczanie-->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Scrollr -->
+    <!--<script src="js/skrollr.min.js"></script>-->
+
+</head>
+
+<body>
+	<!-- Górne Menu-->
+
+    <!-- Mobilne menu -->
+    <div class="mobile-menu" id="main-nav-mobile">
+        <a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+        <ul class="main-nav-list-mobile">
+            <li><a href=""></a></li>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="onas.html">O nas</a></li>
+            <li><a href="">Kadra</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="">Logowanie</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <div id="main-container">
+        <!-- Naglowek -->
+        <header class="main-header alt-bg">
+            <div class="header-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Logo -->
+                            <div class="logo-wrapper pull-left">
+                                <a href="" class="main-logo">
+                                    <img src="images/logo.png" alt="" />
+                                </a>
+                            </div>
+
+
+                            <!-- Glowne menu -->
+                            <nav class="nav-main pull-right" id="main-nav">
+                                <a class="mobile-nav-button hidden-md hidden-lg" href="" id="mobile-icon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <ul class="main-nav-list visible-md visible-lg">
+
+                                    <li><a href="index.html" >Strona Główna</a></li>
+                                    <li><a href="onas.html" class="menu-link-active">O nas</a></li>
+                                    <li><a href="">Kadra</a></li>
+                                    <li><a href="cennik.html">Cennik</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </nav>
+                            <!-- clearfix naglowek -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Odsuwa zawartosc od naglowka -->
+     
+        <div class="clearfix"></div>
+  
+        <!-- glowna zawartosc -->
+        <div id="main-content">
+            <!-- Sekcja intro -->
+            <section class="intro alt-bg">
+                <div class="container">
+                    <div class="row">
+                        <!--Lewacka kolumna-->
+                        <div class="col-xs-12 col-sm-10 col-lg-8">
+                            <br />
+
+                            <h1>O naszym gabinecie</h1>
+                            <h3 style="line-height:0.7cm">
+                                Drodzy Pacjenci! <br /> &nbsp;&nbsp;&nbsp; Jesteśmy z państwem już od 15 lat. W ciągu tych 10 lat zaufały nam setki pacjentów. Jest to spowodowane najwyższą klasą sprzętu, oraz profesjonalnym podejściem do każdego pacjenta. Nasza kadra została wykształcona w najlepszych światowych klinikach, jednak mimo to stale bierze udział w ogólnopolskich szkoleniach, by stale zapewniać państwu najwyższy komfort usług.
+                                <br />
+                                <br />
+                                W naszym gabinecie wykonywane są zabiegi, które dzięki światowej klasy sprzętowi oraz odpowiednim doborem leków, nie sprawiają pacjentowi żadnego bólu. W naszym gabinecie obejmujemy szczególną troską naszych najmłodszych pacjentów dzięki czemu, możemy od najmłodszych lat pokazywać, że leczenie zębów nie musi się kojarzyć z bólem, lecz także z zabawą.
+                                <br />
+                                <br />
+                                Nasza przychodnia jest wyposażona także w pokój zabaw, przeznaczony dla najmłodszych, dzięki czemu rodzice którzy przychodzą do nas zabieg, nie muszą się martwić o to, co zrobić z pociechami.
+                            </h3>
+                            <br />
+
+                 
+
+                        </div>
+                        <!-- Prawilna kolumna -->
+                        <div class="hidden-xs hidden-sm col-lg-4  ">
+                            <br />
+
+                            <img src="images/16.jpg" class="img-responsive" alt="Responsive image">
+                            <br />
+                            <br />
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <!-- Gora stopki -->
+                <div class="footer-main">
+                    <div class="container">
+
+                        <div class="col-xs-12 col-sm-3 col-lg-4 our-blog">
+                            <div class="footer-col-container">  
+                                <h4>Menu</h4>                   
+                                <ul>
+                                    
+                                    <li><a href="">Strona Główna</a></li>
+                                    <li><a href="">O nas</a></li>
+                                    <li><a href="">Kadra</a></li>
+                                    <li><a href="">Cennik</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Nasze Linki -->
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                                <h4>Godziny przyjęć</h4>
+                            <ul>
+                                <li><a href="#">Poniedziałek           8.00 - 18.00</a></li>
+                                <li><a href="#">Wtorek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Środa                  8.00 - 18.00</a></li>
+                                <li><a href="#">Czwartek               8.00 - 18.00</a></li>
+                                <li><a href="#">Piątek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Sobota/Niedziela       Nieczynne</a></li>                             
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li><a href="#">Gabinet Dentystyczny "MyTeeth"</a></li>
+                                <li><a href="#">ul.Olsztyńska 12</a></li>
+                                <li><a href="#">14-100 Ostróda</a></li>
+                                <li><a href="#">Telefon 88844939</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </footer>
+
+        </div>
+
+        
+
+
+
+        </div>
+
+        <!-- Informacje powitalne-->
+        <!-- Stopka-->
+</body>
+
+</html>

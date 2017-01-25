@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Strona Główna</title>>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Glowny plik LESS -->
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <!-- Fonty google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LESS>JS -->
+    <!--<script src="js/less.min.js"></script>-->
+    <!-- warunkowe ladowanie scrollr -->
+    <script>
+	if (document.documentElement.clientWidth > 1200) {
+		$.getScript("js/skrollr.min.js", function(){
+		var s = skrollr.init({forceHeight: false});
+		});
+	}
+    </script>
+    <!-- wlasne JS -->
+    <script src="js/custom.js"></script>
+    <!-- odliczanie-->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Scrollr -->
+    <!--<script src="js/skrollr.min.js"></script>-->
+
+</head>
+
+<body>
+	<!-- Górne Menu-->
+
+    <!-- Mobilne menu -->
+    <div class="mobile-menu" id="main-nav-mobile">
+        <a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+        <ul class="main-nav-list-mobile">
+            <li><a href=""></a></li>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="onas.html">O nas</a></li>
+            <li><a href="">Kadra</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="">Logowanie</a></li>
+ 
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <div id="main-container">
+        <!-- Naglowek -->
+        <header class="main-header alt-bg">
+            <div class="header-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Logo -->
+                            <div class="logo-wrapper pull-left">
+                                <a href="" class="main-logo">
+                                    <img src="images/logo.png" alt="" />
+                                </a>
+                            </div>
+
+
+                            <!-- Glowne menu -->
+                            <nav class="nav-main pull-right" id="main-nav">
+                                <a class="mobile-nav-button hidden-md hidden-lg" href="" id="mobile-icon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <ul class="main-nav-list visible-md visible-lg">
+
+                                    <li><a href="index.html" class="menu-link-active">Strona Główna</a></li>
+                                    <li><a href="onas.html">O nas</a></li>
+                                    <li><a href="">Kadra</a></li>
+                                    <li><a href="cennik.html">Cennik</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </nav>
+                            <!-- clearfix naglowek -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Odsuwa zawartosc od naglowka -->
+     
+        <div class="clearfix"></div>
+        <!-- Strona Główna/O nas/Kadra/Cennik/Kontakt/Zaloguj/Rejestracja-->
+        <!-- Slider 3 obrazki-->
+        <!-- Gorny slider -->
+        <section class="top-slider hidden-xs">
+            <div id="top-slider" class="carousel slide" data-ride="carousel" data-0="transform:translateY(0px);"
+                 data-800="transform:translateY(-400px);">
+                <!-- Kontrolki -->
+
+                <!-- Zawartosc slidera -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slajd -->
+                    <div class="item active">
+                        <div class="slide-image" id="slide1"></div>
+                        <div class="container">
+                            <div class="item-content" data-0="transform:translateY(0px);"
+                                 data-800="transform:translateY(50px);">
+                                <h1>Profesjonalna obsługa</h1>
+                                <h3>W pełni wykwalifikowana kadra</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slajd -->
+                    <div class="item">
+                        <div class="slide-image" id="slide2"></div>
+                        <div class="container">
+                            <div class="item-content" data-0="transform:translateY(0px);"
+                                 data-800="transform:translateY(50px);">
+                                <h1>Bezbolesne zabiegi</h1>
+                                <h3>Zaawansowane techniki pracy</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slajd -->
+                    <div class="item">
+                        <div class="slide-image" id="slide3"></div>
+                        <div class="container">
+                            <div class="item-content" data-0="transform:translateY(0px);"
+                                 data-800="transform:translateY(50px);">
+                                <h1>Przystępne ceny</h1>
+                                <h3>Najniższe ceny w mieście</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Strzalki -->
+                <a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left"></i>
+                    <span class="sr-only">Poprzedni</span>
+                </a>
+                <a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right"></i>
+                    <span class="sr-only">Następny</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Mobilny wariant -->
+        <section class="mobile-slider visible-xs">
+            <div class="container">
+                <div class="item-content">
+                    <h1>Profesjonalna obsługa</h1>
+                    <h3>W pełni wykwalifikowana kadra</h3> 
+
+                </div>
+            </div>
+        </section>     
+        <!-- glowna zawartosc -->
+        <div id="main-content">
+            <!-- Sekcja intro -->
+            <section class="intro alt-bg">
+                <div class="container">
+                    <div class="row">
+                        <!--Lewacka kolumna-->
+                        <div class="col-xs-12 col-sm-10 col-lg-8">
+                            <br />
+
+                            <h1>Witaj w Gabinecie Stomatologicznym "My Teeth" !</h1>
+                            <h3 style="line-height:0.7cm">
+                                Jeżeli szukasz gabinetu, dzięki któremu odzyskasz swój piękny uśmiech, gabinetu w którym będziesz mógł przeprowadzić bezbolesne zabiegi, gabinetu na którego zabiegi nie będziesz musiał wydawać majątku, to dobrze trafiłeś !
+                                <br />
+                                <br />
+                                Jesteśmy firmą działającą na terenie Ostródy od 15 lat. Jesteśmy wyposażeni w najwyższej klasy sprzęt, do przeprowadzania najdrobniejszych zabiegów z największą prezyzją i profesjonalizmem. Zaufały nam setki pacjentów, o czym mogą świadczyć ogólnodostępne opinie na temat naszej działalności. Do każdego pacjenta mamy indywidualne podejście, przygotowujemy dla niego indywidualny plan leczenia, dostosowany do jego potrzeb.
+                                <br />
+                                <br />
+                                W naszym serwisie będą mogli państwo założyć swoje konto, przeglądać historie swojego leczenia, oraz swój aktualny stan uzębienia. Dzięki temu serwisowi będą mogli państwo zarezerwować wizytę, dla dogodny dla państwa termin.
+                            </h3>
+                            <br />
+
+                            <h2>Serdecznie zapraszamy !</h2>
+
+                        </div>
+                        <!-- Prawilna kolumna -->
+                        <div class="hidden-xs hidden-sm col-lg-4  ">
+                            <br />
+
+                            <img src="images/4.jpg" class="img-responsive" alt="Responsive image">
+                            <br />
+                            <img src="images/12.jpg" class="img-responsive" alt="Responsive image">
+                            <br />
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <footer>
+                <!-- Gora stopki -->
+                <div class="footer-main">
+                    <div class="container">
+
+                        <div class="col-xs-12 col-sm-3 col-lg-4 our-blog">
+                            <div class="footer-col-container">  
+                                <h4>Menu</h4>                   
+                                <ul>
+                                    
+                                    <li><a href="">Strona Główna</a></li>
+                                    <li><a href="">O nas</a></li>
+                                    <li><a href="">Kadra</a></li>
+                                    <li><a href="">Cennik</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Nasze Linki -->
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                                <h4>Godziny przyjęć</h4>
+                            <ul>
+                                <li><a href="#">Poniedziałek           8.00 - 18.00</a></li>
+                                <li><a href="#">Wtorek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Środa                  8.00 - 18.00</a></li>
+                                <li><a href="#">Czwartek               8.00 - 18.00</a></li>
+                                <li><a href="#">Piątek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Sobota/Niedziela       Nieczynne</a></li>                             
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li><a href="#">Gabinet Dentystyczny "MyTeeth"</a></li>
+                                <li><a href="#">ul.Olsztyńska 12</a></li>
+                                <li><a href="#">14-100 Ostróda</a></li>
+                                <li><a href="#">Telefon 88844939</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </footer>
+
+        </div>
+
+        
+
+
+
+        </div>
+
+        <!-- Informacje powitalne-->
+        <!-- Stopka-->
+</body>
+
+</html>

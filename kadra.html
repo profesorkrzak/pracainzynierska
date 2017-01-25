@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Kadra</title>>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Glowny plik LESS -->
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <!-- Fonty google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- LESS>JS -->
+    <!--<script src="js/less.min.js"></script>-->
+    <!-- warunkowe ladowanie scrollr -->
+    <script>
+	if (document.documentElement.clientWidth > 1200) {
+		$.getScript("js/skrollr.min.js", function(){
+		var s = skrollr.init({forceHeight: false});
+		});
+	}
+    </script>
+    <!-- wlasne JS -->
+    <script src="js/custom.js"></script>
+    <!-- odliczanie-->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Scrollr -->
+    <!--<script src="js/skrollr.min.js"></script>-->
+
+</head>
+
+<body>
+
+    <!-- Mobilne menu -->
+    <div class="mobile-menu" id="main-nav-mobile">
+        <a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+        <ul class="main-nav-list-mobile">
+            <li><a href=""></a></li>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="onas.html">O nas</a></li>
+            <li><a href="">Kadra</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li><a href="">Logowanie</a></li>
+ 
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <div id="main-container">
+        <!-- Naglowek -->
+        <header class="main-header alt-bg">
+            <div class="header-content">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Logo -->
+                            <div class="logo-wrapper pull-left">
+                                <a href="" class="main-logo">
+                                    <img src="images/logo.png" alt="" />
+                                </a>
+                            </div>
+
+
+                            <!-- Glowne menu -->
+                            <nav class="nav-main pull-right" id="main-nav">
+                                <a class="mobile-nav-button hidden-md hidden-lg" href="" id="mobile-icon">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <ul class="main-nav-list visible-md visible-lg">
+
+                                    <li><a href="index.html" >Strona Główna</a></li>
+                                    <li><a href="onas.html" >O nas</a></li>
+                                    <li><a href="" class="menu-link-active">Kadra</a></li>
+                                    <li><a href="cennik.html">Cennik</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </nav>
+                            <!-- clearfix naglowek -->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>    
+        <div class="clearfix"></div>
+        
+        <!-- glowna zawartosc -->
+        <div id="main-content">
+            <!-- Sekcja intro -->
+            <section class="intro alt-bg">
+                <section class="our-services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                
+                                    <span><img style="display:block;" src="images/16.jpg" class= "img-circle img-responsive" /></span>
+                                <br />
+                                    <h3 style="text-align:center">Jan Kowalski</h3>
+                                    <h4 style="text-align:center">Dentysta - prezes spółki</h4>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <span><img style="display:block;" src="images/lekarz1.jpg" class="img-circle img-responsive" /></span>
+                                <br />
+                                <h3 style="text-align:center">Dominik Szyba</h3>
+                                <h4 style="text-align:center">Dentysta</h4>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <span><img style="display:block;" src="images/lekarz6.jpg" class="img-circle img-responsive" /></span>
+                                <br />
+                                <h3 style="text-align:center">Łukasz Lenda</h3>
+                                <h4 style="text-align:center">Dentysta</h4>
+
+                            </div>
+
+                        </div>
+                        <br />
+                        <!-- Druga kolumna-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+
+                                <span><img style="display:block;" src="images/lekarz3.jpg" class=" img-circle img-responsive" /></span>
+                                <br />
+                                <h3 style="text-align:center">Anna Kowalska</h3>
+                                <h4 style="text-align:center">Dentysta - prezes spółki</h4>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <span><img style="display:block;" src="images/lekarz4.jpg" class=" img-circle img-responsive" /></span>
+                                <br />
+                                <h3 style="text-align:center">Justyna Znachor</h3>
+                                <h4 style="text-align:center">Dentysta - prezes spółki</h4>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+
+                                <span><img style="display:block;" src="images/lekarz7.jpg" class=" img-circle img-responsive" /></span>
+                                <br />
+                                <h3 style="text-align:center">Jadwiga Nashor</h3>
+                                <h4 style="text-align:center">Dentysta - prezes spółki</h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <br />
+            <br />
+
+            <footer>
+                <!-- Gora stopki -->
+                <div class="footer-main">
+                    <div class="container">
+
+                        <div class="col-xs-12 col-sm-3 col-lg-4 our-blog">
+                            <div class="footer-col-container">  
+                                <h4>Menu</h4>                   
+                                <ul>
+                                    
+                                    <li><a href="">Strona Główna</a></li>
+                                    <li><a href="">O nas</a></li>
+                                    <li><a href="">Kadra</a></li>
+                                    <li><a href="">Cennik</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                    <li><a href="">Logowanie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Nasze Linki -->
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                                <h4>Godziny przyjęć</h4>
+                            <ul>
+                                <li><a href="#">Poniedziałek           8.00 - 18.00</a></li>
+                                <li><a href="#">Wtorek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Środa                  8.00 - 18.00</a></li>
+                                <li><a href="#">Czwartek               8.00 - 18.00</a></li>
+                                <li><a href="#">Piątek                 8.00 - 18.00</a></li>
+                                <li><a href="#">Sobota/Niedziela       Nieczynne</a></li>                             
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-2 col-lg-4 our-links">
+                            <h4>Kontakt</h4>
+                            <ul>
+                                <li><a href="#">Gabinet Dentystyczny "MyTeeth"</a></li>
+                                <li><a href="#">ul.Olsztyńska 12</a></li>
+                                <li><a href="#">14-100 Ostróda</a></li>
+                                <li><a href="#">Telefon 88844939</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+     </div>
+</body>
+
+</html>
